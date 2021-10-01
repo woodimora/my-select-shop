@@ -30,6 +30,6 @@ public class ItemSearchController {
     @ResponseBody
     public List<ItemDto> getItems(@RequestParam String query) throws IOException {
 
-        return itemSearchService.search(query);
+        return itemSearchService.getItems(query);
     }
 }
